@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назар Карпенко | Frontend-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Переключатель темы -->
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle" aria-label="Переключить тему">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#skills" class="nav-link">Навыки</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#experience" class="nav-link">Опыт</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главная секция -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="animate-text">Назар Карпенко</h1>
+                    <p class="hero-subtitle animate-text delay-1">Frontend-разработчик</p>
+                    <p class="hero-location animate-text delay-2">
+                        <i class="fas fa-map-marker-alt"></i> Актобе, Казахстан
+                    </p>
+                    <div class="hero-buttons animate-text delay-3">
+                        <a href="#contact" class="btn btn-primary">Связаться</a>
+                        <a href="#" class="btn btn-outline" id="download-resume">Скачать резюме</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-scale">
+                    <div class="photo-placeholder">
+                        <img src="assets/photo.jpg" alt="Назар Карпенко">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <p>
+                        Frontend-разработчик — я специалист в области веб-разработки, который занимается созданием
+                        пользовательского интерфейса сайтов и веб-приложений. Отвечаю за внешний вид, удобство
+                        и интерактивность страниц, используя HTML, CSS и JavaScript, обеспечивая корректную работу
+                        сайта на разных устройствах и в браузерах.
+                    </p>
+                    <p class="about-education">
+                        <strong>Образование:</strong> Европейский высший колледж, специальность «Программист
+                        программного обеспечения»
+                    </p>
+                    <p class="about-courses">
+                        <strong>Онлайн-курсы:</strong> CapEducation, QadamCenter
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma / Tilda</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Мобилография</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Проекты</h2>
+                <div class="projects-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                    <!-- Карточка 1: Личный сайт -->
+                    <div
+                        style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                        <div
+                            style="width: 100px; height: 100px; background: linear-gradient(135deg, #8b5cf6, #06b6d4); border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-code" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #8b5cf6;">Личный сайт</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Сайт-портфолио на HTML, CSS, JavaScript</p>
+                        <div style="display: flex; gap: 15px; justify-content: center;">
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2: Сайт на Tilda -->
+                    <div
+                        style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                        <div
+                            style="width: 100px; height: 100px; background: linear-gradient(135deg, #e63946, #1e1e2f); border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-car" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #8b5cf6;">Toyota на Tilda</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Лендинг для автомобильного бренда, созданный в
+                            Tilda</p>
+                        <div style="display: flex; gap: 15px; justify-content: center;">
+                            <a href="http://toyotatocatoca.tilda.ws/" target="_blank"
+                                style="display: inline-block; padding: 10px 25px; background: transparent; border: 2px solid #8b5cf6; border-radius: 30px; text-decoration: none; color: #8b5cf6; font-weight: 600;">
+                                <i class="fas fa-external-link-alt"></i> Демо
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3: Дизайн в Figma -->
+                    <div
+                        style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+                        <div
+                            style="width: 100px; height: 100px; background: linear-gradient(135deg, #f39c12, #e74c3c); border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-pencil-ruler" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #8b5cf6;">Дизайн в Figma</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Макеты мобильных приложений и веб-интерфейсов</p>
+                        <div style="display: flex; gap: 15px; justify-content: center;">
+                            <a href="https://www.figma.com/design/wLeyt1aaP5CCHfLiwguR3q/CoTravel_Desktop?node-id=0-1&t=FP6YzFH47hRVuaOH-1"
+                                target="_blank"
+                                style="display: inline-block; padding: 10px 25px; background: transparent; border: 2px solid #8b5cf6; border-radius: 30px; text-decoration: none; color: #8b5cf6; font-weight: 600;">
+                                <i class="fas fa-eye"></i> Смотреть
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт работы -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Опыт работы</h2>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <span class="experience-date">2026 — настоящее время</span>
+                        <h3>Хромтауская центральная районная больница</h3>
+                        <p class="experience-position">Техник / поддержка сайта</p>
+                    </div>
+                    <div class="experience-body">
+                        <ul class="experience-list">
+                            <li><i class="fas fa-check-circle"></i> Ремонт компьютеров и оргтехники</li>
+                            <li><i class="fas fa-check-circle"></i> Настройка локальной сети</li>
+                            <li><i class="fas fa-check-circle"></i> Поддержка и обновление сайта больницы</li>
+                            <li><i class="fas fa-check-circle"></i> Занимаюсь обучением</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <ul>
+                            <li><i class="fas fa-phone-alt"></i> <a href="tel:+77789297140">+7 778 929 7140</a></li>
+                            <li><i class="fas fa-envelope"></i> <a
+                                    href="mailto:sentials62@gmail.com">sentials62@gmail.com</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Алтын Орда 25А, Актобе, 030000</li>
+                        </ul>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="email" name="email" placeholder="Ваш Email" required>
+                        <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Отправить сообщение</button>
+                    </form>
+                    <div id="form-status" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Назар Карпенко. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
